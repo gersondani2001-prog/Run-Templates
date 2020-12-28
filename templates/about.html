@@ -1,0 +1,265 @@
+
+<!-- Código de html estructura de la página -->
+<!DOCTYPE html>
+<!-- html  -->
+<!-- lenguajes español -->
+<!-- ng app angular js -->
+<html lang="es" ng-app="app">
+    <!-- encabezado y enlaces de la pagina -->
+<head>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- caracteristicas especiales -->
+    <meta charset="UTF-8">
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Templates Example</title>
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="../recourses/font-awesome.min.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="../css/pogo-slider.min.css">
+    <!-- icono -->
+    <link rel="icon" href="../icon/icono.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<!-- body cuerpo de la pagina -->
+<!-- ng controller angular js -->
+<body ng-controller="myCtrl" id="mybody" onload="myFunction()" >
+
+    <!-- preloader area -->
+    <div class="loader_bg" id="loader_bg" >
+        <div class="loader"><img src="../img/loading.gif" alt="#" /></div>
+    </div>
+    <!-- boton subir -->
+    <span class="ir-arriba fa fa-angle-double-up"></span>
+    <!-- codigo de sidemenu -->
+    <div id="sidebar">
+        <ul>
+            <li>
+            <img src="../img/main_logo.png" alt="Logo Fazt" width="100px" height="100px" class="iconomenu">
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- menu -->
+    <header class="top-header" id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-6">
+                    <div class="logo_main">
+                    <a href="index.html"><img src="../img/main_logo.png" /></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-6">
+                    <button type="button" id="sidebarCollapse" class="btn navbar-btn toggle-btn "><img src="../img/menu_icon.png"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- auxiliar -->
+    <div class="aux">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                    <div class="aux-box">
+                        <h1>
+                            About Us
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome -->
+    <div class="welcome">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 com-12 text-center">
+                    <div class="welcome-box-img">
+                        <img src="../img/ab_1.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 com-12">
+                    <div class="welcome-box-info">
+                        <h1>Welcome</h1>
+                        <h2>To run fitness</h2>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't It is a long established f act that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        </p>
+                        <p>
+                            If you are going to use a passage of Lorem Ipsum, 
+                            you need to be sure there isn't It is a long established 
+                            f act that a reader will be distracted by the readable 
+                            content of a page when looking at its layout.
+                        </p>
+                        <button>Read More <span class="fa fa-long-arrow-right"></span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- success stories -->
+    <div class="stories">
+        <div class="container-fluid">
+            <div class="row stories-box">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="stories-info">
+                        <h1>
+                            <span>Our</span>
+                        </h1>
+                        <h1>
+                            success stories
+                        </h1>
+                        <p>
+                            It is a long established fact that a reader will be
+                            distracted by the readable content of a page when
+                            looking at its layout. The point of using Lorem 
+                            Ipsum is that it has a more-or-less normal distribution 
+                            of letters, as opposed to using 'Content here, content here',
+                            making it look like readable English. Many desktop
+                            publishing packages and web page editors now use
+                            Lorem Ipsum as their default model text, and a search for 
+                            'lorem ipsum' will uncover many web sites still in their infancy. 
+                            rious versions have evolved over the years, sometimes by accident, 
+                            sometimes on purpose (injected humour and the like.
+                        </p>
+                        <button>Read More <span class=""></span></button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="stories-img">
+                        <img src="../img/o1.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <footer class="footer-div footer-logo">
+                        <img src="../img/main_logo.png" alt="logo">
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form, 
+                            by injected humour, or randomised words which don't look even slightly
+                        </p>
+                    </footer>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <footer class="footer-div">
+                        <h1>Address</h1>
+                        <p>
+                            Address: 73 Canal Street, New York, NY <br/>
+                            Tel: +1 123 456 789 <br/>
+                            Fax: +1 123 456 789 <br/>
+                            Email: support@vigorfit.com <br/>
+                        </p>
+                        <ul class="social-footer-bar">
+                            <li>
+                                <span class="fa fa-facebook"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-twitter"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-google-plus"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-linkedin"></span>
+                            </li>
+                            <li>
+                                <span class="fa fa-youtube-play"></span>
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <footer class="footer-div">
+                        <h1>
+                            Our timings
+                        </h1>
+                        <ul class="text-left-list">
+                            <li>
+                                Monday
+                            </li>
+                            <li>
+                                Tuesday
+                            </li>
+                            <li>
+                                Thursday
+                            </li>
+                            <li>
+                                Friday
+                            </li>
+                            <li>
+                                Saturday
+                            </li>
+                            <li>
+                                Sunday
+                            </li>
+                        </ul>
+                        <ul class="text-right-list">
+                            <li>
+                                Monday
+                            </li>
+                            <li>
+                                Tuesday
+                            </li>
+                            <li>
+                                Thursday
+                            </li>
+                            <li>
+                                Friday
+                            </li>
+                            <li>
+                                Saturday
+                            </li>
+                            <li>
+                                Sunday
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                    <p>Ⓒ Copyright 2019 All Right Reserved By Desarrollador Gerson Daniel Boche Peralta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- enlaces de fuentes -->
+    <!-- angularjs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- slider -->
+    <script src="../js/jquery.pogo-slider.min.js"></script>
+    <script src="../js/slider-index.js"></script>
+    <!-- fuente logica de codigo -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
